@@ -190,6 +190,7 @@
 				background-size: 100% 40px, 100% 40px, 100% 20px, 100% 20px;
 				background-attachment: local, local, scroll, scroll;
 				background-color: #fdf9f2;
+				-webkit-touch-callout: none; /* 禁用长按菜单 */
 			}
 
 			.text-content::-webkit-scrollbar {
@@ -272,6 +273,7 @@
 					font-size: 1rem;
 					padding: 4px 4px;
 					-webkit-overflow-scrolling: touch;
+					-webkit-touch-callout: none; /* 禁用长按菜单 */
 				}
 
 				.owner-name {
@@ -313,6 +315,7 @@
 					scrollbar-color: #bcab99 #f0e8dd;
 					padding: 12px 16px;
 					background: #fdf9f2;
+					-webkit-touch-callout: none; /* 禁用长按菜单 */
 				}
 
 				.text-content::-webkit-scrollbar {
@@ -414,8 +417,8 @@
 				if (container) {
 					container.addEventListener('mousedown', (e) => e.preventDefault());
 					container.addEventListener('mouseup', (e) => e.preventDefault());
-					container.addEventListener('touchstart', (e) => e.preventDefault());
-					container.addEventListener('touchend', (e) => e.preventDefault());
+					// container.addEventListener('touchstart', (e) => e.preventDefault());
+					// container.addEventListener('touchend', (e) => e.preventDefault());
 				}
 
 				// 定期清除选区
